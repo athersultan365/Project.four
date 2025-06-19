@@ -1,0 +1,3687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./tab logo.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tesla</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 100vh;
+            position: relative;
+        }
+
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+        .header1 {
+            width: 100%;
+            height: 100%;
+            /* border: 4px solid red; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0px
+        }
+
+
+        .uperline {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            /* border: 3px solid blue; */
+            background-image: linear-gradient(270deg, black, blue);
+            color: white;
+
+        }
+
+        .exp,
+        .first1,
+        .schedule7 {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+        }
+
+        .exp {
+            text-align: center;
+            margin-left: 150px;
+        }
+
+        .first1,
+        .schedule7 {
+            margin-left: 50px;
+
+        }
+
+        .menubar {
+            width: 100%;
+            height: 50px;
+            /* background-color: aquamarine; */
+            /* border: 1px solid red; */
+            margin-top: 48px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 100%;
+            /* border: 1px solid gold; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+
+        }
+
+        #textlogo {
+            width: 150px;
+            height: 100%;
+            color: white;
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+        }
+
+        .tagelist {
+            width: 500px;
+            height: 100%;
+            /* border: 1px solid blue; */
+            margin-left: 150px;
+            /* color: red; */
+        }
+
+        .logo,
+        .tagelist,
+        .icon {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .icon {
+            width: 100px;
+            height: 50px;
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 1000px;
+            margin-top: -50px;
+            word-spacing: 20px;
+            /* border: 1px solid greenyellow; */
+            padding-top: 10px;
+        }
+
+        .taglist-li {
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            list-style: none;
+            margin-left: 30px;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+
+
+        .taglist-li:hover .drop-down {
+            opacity: 1;
+            height: 500px;
+        }
+
+        .drop-down ul li {
+            list-style: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .drop-down {
+            width: 1300px;
+            height: 0px;
+            /* border: 1px solid red; */
+            background-color: white;
+            position: absolute;
+            left: -820%;
+            top: 25px;
+            overflow: hidden;
+            transition: 0.4s;
+            opacity: 0px;
+
+        }
+
+        .picdetail {
+            width: 220px;
+            height: 170px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 50px;
+
+        }
+
+        .left {
+            margin-left: 30px
+        }
+
+        .text2 {
+            width: 200px;
+            height: 50px;
+            color: black;
+            /* border: 1px solid blueviolet; */
+            text-align: center;
+            margin-top: 3px;
+            margin-left: 7px;
+
+
+        }
+
+        .modelS {
+            width: 200px;
+            height: 100px;
+            /* border: 3px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+            margin-top: 10px;
+        }
+
+        #models1 {
+            width: 200px;
+            height: 100px;
+
+        }
+
+        .model3 {
+            width: 200px;
+            height: 100px;
+            /* border: 3px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+        }
+
+        #modle3pic {
+            width: 195px;
+            height: 95px;
+        }
+
+        .modelx {
+            width: 200px;
+            height: 100px;
+            /* border:F
+             /* 3px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+        }
+
+        #xmodel {
+            width: 195px;
+            height: 95px;
+
+
+        }
+
+        #mechoose {
+            width: 195px;
+            height: 95px;
+
+
+        }
+
+        .sublist {
+            width: 300px;
+            height: 490px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #unstyle {
+            margin-left: 30px;
+            margin-top: 20px;
+            list-style: none;
+        }
+
+        .leftborder {
+
+            border-left: 1px solid gray;
+            margin-left: 20px;
+
+        }
+
+
+
+        .inventory {
+            color: black;
+        }
+
+        .usedcar,
+        .demodrive,
+        .trade-in,
+        .compare,
+        .charge,
+        .fleet,
+        .semi,
+        .roadster {
+            margin-top: 10px;
+            color: black;
+        }
+
+        .carlist {
+            width: 950px;
+            height: 490px;
+            /* border: 2px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+
+        }
+
+        .modely {
+            width: 200px;
+            /* height: 100px; */
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+        }
+
+        .choose {
+            width: 200px;
+            height: 100px;
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+        }
+
+        .truck {
+            margin-left: 30px;
+        }
+
+        .detail {
+            width: 220px;
+            height: 170px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+
+
+
+        #modelya1 {
+            width: 195px;
+            height: 95px;
+
+
+        }
+
+        .upline {
+            width: 870px;
+            height: 210px;
+            /* border: 1px solid blue; */
+            margin-top: 20px;
+            margin-left: 50px;
+
+        }
+
+        .cyber {
+            width: 200px;
+            height: 100px;
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 7px;
+        }
+
+        #cybertruck {
+            width: 195px;
+            height: 95px;
+        }
+
+        .Model3 {
+            width: 300px;
+            height: 50px;
+            /* border: 1px solid red; */
+            /* margin-top: 50px; */
+            margin-left: 530px;
+
+        }
+
+        .Model3 h1 {
+            /* border: 1px solid blue; */
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        .Model3 p {
+            /* border: 1px solid white; */
+            text-align: center;
+            color: white;
+            font-size: large;
+        }
+
+        .Model3 p2 {
+            width: 300px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            margin-left: 70px;
+        }
+
+        .available {
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: gray;
+            margin-left: 350px;
+            /* margin-top: 300px; */
+        }
+
+        .demo {
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            margin-left: 80px;
+            margin-top: 300px;
+        }
+
+        .savetax {
+            width: 700px;
+            /* border: 1px solid red; */
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            margin-left: 350px;
+        }
+
+        /* ////////////////////////////////////////////////////////////s */
+
+
+        .section2 {
+            width: 100%;
+            height: 100vh;
+            margin-top: -5px;
+            /* padding: 1px; */
+            /* border: 1px solid blue; */
+        }
+
+        .Distance {
+            width: 100%;
+            height: 100%;
+            background-image: url("./Model-3-Exterior-Desktop-NA.avif");
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+            /* position: fixed; */
+
+        }
+
+        .bulit {
+            width: 700px;
+            height: 100px;
+            /* border: 1px solid green; */
+            margin-left: 350px;
+            margin-top: 50px;
+            padding: 1px;
+
+
+        }
+
+        .bulit h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .bulit p {
+            text-align: center;
+            color: white;
+        }
+
+        .MODELa3 {
+            width: 100%;
+            height: 40px;
+            /* border: 3px solid blue; */
+            background-image: linear-gradient(270deg, gray, rgba(128, 128, 128, 0.375));
+            color: white;
+            position: absolute;
+            top: 50px;
+            opacity: 0;
+        }
+
+        .carmodel h3 {
+            width: 80px;
+            height: 100%;
+            /* border: 1px solid greenyellow; */
+            margin-left: 50px;
+            margin-top: 5px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .inventory1 {
+            width: 550px;
+            height: 100%;
+            /* border: 1px solid yellow; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 300px;
+            margin-top: 7px;
+
+
+        }
+
+
+        .inbox li {
+            display: inline-block;
+            list-style: none;
+            margin-left: 50px;
+        }
+
+        .carmodel,
+        .inventory1,
+        .Customer-order {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .Customer-order {
+            margin-top: 7px;
+            background-color: rgba(37, 36, 36, 0.827);
+            color: white;
+        }
+
+
+        /* ///////////////////vedio area/////////////// */
+
+
+        .vedio {
+
+            width: 100%;
+            height: 130vh;
+            /* border: 3px solid blue; */
+            background-color: black;
+            padding: 1px;
+        }
+
+
+        .vedioblock {
+            width: 84%;
+            height: 60%;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 100px;
+            position: relative;
+        }
+
+        .twocolor,
+        .wheel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: o;
+            left: o;
+            /* border: 1px solid yellow; */
+        }
+
+        .twocolor {
+            animation-name: twocar;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes twocar {
+
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            51% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+        .wheel {
+            animation-name: wheel2;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes wheel2 {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            51% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+
+
+        .updated {
+            width: 520px;
+            height: 75px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 40px;
+            margin-left: 300px;
+        }
+
+        .dot {
+            width: 70px;
+            height: 40px;
+            /* border: 1px solid white; */
+
+        }
+
+        .dot1 {
+            width: 15px;
+            height: 15px;
+            /* border: 1px solid white; */
+            background-color: white;
+            border-radius: 100px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        .dot2 {
+            width: 15px;
+            height: 15px;
+            /* border: 1px solid white; */
+            background-color: white;
+            border-radius: 100px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        .dot1 {
+
+            animation: dotm;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dotm {
+            0% {
+                background-color: white;
+
+            }
+
+            50% {
+                background-color: white;
+
+            }
+
+            51% {
+                background-color: gray;
+
+            }
+
+            100% {
+                background-color: gray;
+            }
+        }
+
+        .dot2 {
+
+            animation: dotn;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dotn {
+            0% {
+                background-color: gray;
+
+            }
+
+            50% {
+                background-color: gray;
+
+            }
+
+            51% {
+                background-color: white;
+
+            }
+
+            100% {
+                background-color: white;
+            }
+
+        }
+
+        .mover {
+            width: 95%;
+            height: 75px;
+            /* border: 1px solid blue; */
+            position: relative;
+        }
+
+
+
+        .slidetext,
+        .slidetext1 {
+            width: 490px;
+            height: 70px;
+            /* border: 1px solid red; */
+            position: absolute;
+            color: white;
+            /* margin-left: 20px; */
+        }
+
+        .slidetext {
+            animation: slidetext;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slidetext {
+            0% {
+                opacity: 1;
+
+            }
+
+            50% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 0;
+
+
+            }
+        }
+
+        .slidetext1 {
+            animation: slidetext1;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slidetext1 {
+            0% {
+                opacity: 0;
+
+            }
+
+            50% {
+                opacity: 0;
+
+            }
+
+            51% {
+                opacity: 1;
+
+            }
+
+            100% {
+                opacity: 0;
+
+
+            }
+        }
+
+        /* ////////////////////vedio close///////////////////// */
+
+        /* //////////////////////interior vedio arear//////////////// */
+
+        .Interior {
+            width: 100%;
+            height: 119vh;
+            /* border: 1px solid yellow; */
+            /* background-color: greenyellow; */
+            padding: 1px;
+
+            /* white border in video background */
+        }
+
+
+        .intertext {
+            width: 600px;
+            height: 100px;
+            /* border: 1px solid grey; */
+            position: absolute;
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+
+        .intertext h2 {
+
+            width: 600px;
+            height: 100px;
+            /* border: 1px solid red; */
+            color: white;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+
+        }
+
+        .intertext p {
+
+            width: 600px;
+            height: 50px;
+            /* border: 1px solid blue; */
+            color: white;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            top: 50px
+        }
+
+        #intercenter {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .intervedio {
+            width: 100%;
+            height: 100%vh;
+            /* border: 1px solid red; */
+
+        }
+
+        /* //////////////////five vedio///////////////// */
+
+
+
+
+        .allvideo {
+
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid yellow; */
+
+
+
+        }
+
+        .fivevideo {
+            width: 1100px;
+            height: 485px;
+            /* border: 1px solid greenyellow; */
+            margin-left: 150px;
+            margin-top: 50px;
+            position: relative;
+
+        }
+
+        .videos {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        .video1 {
+            animation-name: vid1;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes vid1 {
+            0% {
+                opacity: 1;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            21% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .video2 {
+            animation-name: vid2;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes vid2 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            21% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            41% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .video3 {
+            animation-name: vid3;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes vid3 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            21% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            41% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            61% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .video4 {
+            animation-name: vid4;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes vid4 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            21% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            41% {
+                opacity: 0;
+            }
+
+            42% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            61% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            81% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .video5 {
+            animation-name: vid5;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes vid5 {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            21% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            41% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            61% {
+                opacity: 0;
+            }
+
+            62% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 0;
+            }
+
+            81% {
+                opacity: 1;
+            }
+
+            99% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .videotext {
+            width: 1100px;
+            height: 210px;
+            /* border: 1px solid blue; */
+            background-color: white;
+            margin-left: 150px;
+            position: absolute;
+
+
+        }
+
+        .text1,
+        .text2,
+        .text3,
+        .text4,
+        .text5 {
+            width: 210px;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5px;
+
+        }
+
+        .data1 {
+            animation: dataop1;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dataop1 {
+            0% {
+                opacity: 2;
+            }
+
+            20% {
+                opacity: 0.5;
+            }
+
+            21% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .data2 {
+            animation: dataop2;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dataop2 {
+            0% {
+                opacity: 0.5;
+            }
+
+            20% {
+                opacity: 0.5;
+            }
+
+            21% {
+                opacity: 2;
+
+            }
+
+            40% {
+                opacity: 0.5;
+
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .data3 {
+            animation: dataop3;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dataop3 {
+            0% {
+                opacity: 0.5;
+            }
+
+            20% {
+                opacity: 0.5;
+            }
+
+            21% {
+                opacity: 0.5;
+
+            }
+
+            40% {
+                opacity: 0.5;
+
+            }
+
+            41% {
+                opacity: 1;
+
+            }
+
+            60% {
+                opacity: 0.5;
+
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .data4 {
+            animation: dataop4;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dataop4 {
+            0% {
+                opacity: 0.5;
+            }
+
+            20% {
+                opacity: 0.5;
+            }
+
+            21% {
+                opacity: 0.5;
+
+            }
+
+            40% {
+                opacity: 0.5;
+
+            }
+
+            41% {
+                opacity: 0.5;
+
+            }
+
+            60% {
+                opacity: 0.5;
+
+            }
+
+            80% {
+                opacity: 2;
+
+            }
+
+            81% {
+
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        .data5 {
+            animation: dataop5;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dataop5 {
+            0% {
+                opacity: 0.5;
+            }
+
+            20% {
+                opacity: 0.5;
+            }
+
+            21% {
+                opacity: 0.5;
+
+            }
+
+            40% {
+                opacity: 0.5;
+
+            }
+
+            41% {
+                opacity: 0.5;
+
+            }
+
+            60% {
+                opacity: 0.5;
+
+            }
+
+            80% {
+                opacity: 0.5;
+
+            }
+
+            81% {
+
+                opacity: 2;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+
+        .textdata {
+            width: 170px;
+            height: 100%;
+            border-top: 3px solid black;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        .textdata h3 {
+            margin-top: 10px;
+        }
+
+        .textdata p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* /////////////////section5//////////// */
+
+        .scetion5 {
+            width: 100%;
+            height: 148vh;
+            /* border: 1px solid blue; */
+            /* background-color:aquamarine; */
+        }
+
+        .cabin {
+            width: 590px;
+            height: 115px;
+            /* border: 1px solid black; */
+            text-align: center;
+            margin-left: 400px;
+            margin-top: 150px;
+        }
+
+        .cabin h2 {
+            margin-top: 10px;
+        }
+
+        .cabin p {
+            margin-top: 10px;
+        }
+
+        .cabinpic {
+            width: 100%;
+            height: 600px;
+        }
+
+        .piccabin {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /* ///////////////screen area///////////////// */
+
+
+        .rpnd {
+            width: 100%;
+            height: 130vh;
+            /* border: 1px solid red; */
+            /* margin-top: 10px; */
+            /* padding-top: -50px; */
+        }
+
+        .screen {
+            width: 80%;
+            height: 500px;
+            /* border: 1px solid blue; */
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+
+        .show {
+            width: 100%;
+            height: 100%;
+        }
+
+        .textrpnd {
+            width: 1060px;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            margin-left: 150px;
+
+        }
+
+        .elegant,
+        .eleganttext {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .eleganttext {
+            font-size: 18px;
+            margin-left: 50px;
+        }
+
+
+
+        /* ////////////////remote area/////////////////// */
+
+        .Remote {
+            width: 100%;
+            height: 140vh;
+            /* border: 1px solid green; */
+        }
+
+        .remotetext {
+            width: 500px;
+            height: 80px;
+            /* border: 1px solid blue; */
+            text-align: center;
+            margin-left: 400px;
+            margin-top: 50px;
+        }
+
+        .remote3 {
+            width: 1020px;
+            height: 610px;
+            /* border: 1px solid yellow; */
+            margin-left: 200px;
+            margin-top: 50px
+        }
+
+        .remotea,
+        .remoteb,
+        .remotec {
+            width: 300px;
+            height: 600px;
+            /* border: 1px solid green; */
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+        }
+
+        .remotea1,
+        .remoteb1,
+        .remotec1 {
+            width: 300px;
+            height: 600px;
+            /* border: 1px solid green; */
+            border-radius: 10px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+
+        .div3 {
+            width: 1020px;
+            height: 80px;
+            /* border: 1px solid rebeccapurple; */
+            margin-top: 30px;
+        }
+
+        .control,
+        .cabin2,
+        .charging {
+            width: 335px;
+            height: 100%;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .cabin2 h2 {
+            margin-top: 10px;
+        }
+
+
+
+        /* //////////////////Mode area //////////////// */
+
+
+
+        .modearea {
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid red; */
+            padding: 1px;
+        }
+
+        .allmode {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid yellow; */
+            /* background-color: aquamarine; */
+            position: relative;
+            top: 0px;
+            padding: 1px;
+
+
+        }
+
+        .yourmode h1 {
+            text-align: center;
+            /* border: 1px solid red; */
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            left: 450px;
+            top: 100px;
+        }
+
+        .dog,
+        .camp,
+        .sentry {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            position: absolute;
+            object-fit: cover;
+            left: 0;
+            top: 0;
+            opacity: 0;
+
+        }
+
+        .modesentry {
+            animation: modesentry;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes modesentry {
+            0% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            34% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+        .sentry {
+            animation: sentrymode;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sentrymode {
+            0% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            34% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .modedot1 {
+
+            animation: modeedot1;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes modeedot1 {
+            0% {
+                background-color: white;
+            }
+
+            33% {
+                background-color: white;
+            }
+
+            34% {
+                background-color: gray;
+            }
+
+            100% {
+                background-color: gray;
+            }
+        }
+
+        .modecamp {
+            animation-name: modecamp;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes modecamp {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            34% {
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 1;
+            }
+
+            67% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .camp {
+            animation-name: campmode;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes campmode {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            34% {
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 1;
+            }
+
+            67% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .modedog {
+
+            animation-name: modedog;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes modedog {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            34% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            67% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+
+        .modedot2 {
+            animation-name: modedot2;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes modedot2 {
+            0% {
+                background-color: gray;
+
+            }
+
+            33% {
+                background-color: gray;
+            }
+
+            34% {
+                background-color: white;
+            }
+
+            66% {
+                background-color: white;
+            }
+
+            67% {
+                background-color: gray;
+            }
+
+            100% {
+                background-color: gray;
+            }
+        }
+
+        .dog {
+            animation-name: dogmode;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes dogmode {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            34% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            67% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .modedot3 {
+
+            animation-name: modedot3;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes modedot3 {
+            0% {
+                background-color: gray;
+
+            }
+
+            33% {
+                background-color: gray;
+            }
+
+            34% {
+                background-color: gray;
+            }
+
+            66% {
+                background-color: gray;
+            }
+
+            67% {
+                background-color: white;
+            }
+
+            100% {
+                background-color: white;
+            }
+        }
+
+
+
+        .modeanimat {
+            width: 600px;
+            height: 70px;
+            /* border: 1px solid blue; */
+            margin-top: 300px;
+            position: relative;
+            left: 400px;
+            /* top: 50px; */
+            color: white;
+            text-align: center;
+
+        }
+
+        .mode3 {
+            width: 100%;
+            height: 100%;
+            /* border: 2px solid brown; */
+        }
+
+        .modedog,
+        .modecamp,
+        .modesentry {
+            width: 97%;
+            height: 100%;
+            /* border: 1px solid green; */
+            position: absolute;
+            /* display: inline-block; */
+            color: white;
+            text-align: left;
+            /* top:400px; */
+            opacity: 0;
+
+        }
+
+        .modedot {
+            width: 100px;
+            height: 25px;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 400px;
+            top: 400px;
+        }
+
+        .modedot1,
+        .modedot2,
+        .modedot3 {
+            width: 15px;
+            height: 15px;
+            border-radius: 100px;
+            background-color: white;
+            display: inline-block;
+            margin-left: 10px;
+
+        }
+
+
+        /* <!-- /////////////charging area/////////////// --> */
+
+        .chargingarea {
+
+            width: 100%;
+            height: 170vh;
+            /* border: 1px solid red; */
+            background-color: black;
+            padding: 1px;
+        }
+
+        .Convenient {
+            width: 450px;
+            height: 80px;
+            /* border: 1px solid green; */
+            color: white;
+            text-align: center;
+            margin-left: 480px;
+            margin-top: 100px;
+
+
+        }
+
+        .charg {
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid blue; */
+            margin-left: 70px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .chargslid {
+            width: 100%;
+            height: 100%;
+            /* border: 2px solid yellow; */
+
+
+        }
+
+        .homecharge,
+        .parkingcharge,
+        .outcharge {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+        }
+
+        .chargetext {
+            animation: chargetext;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes chargetext {
+            0% {
+                color: gray;
+            }
+
+            33% {
+                color: gray;
+            }
+
+            34% {
+                color: white;
+            }
+
+            100% {
+                color: white;
+            }
+        }
+
+        .homecharge {
+
+            animation: homecharge;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes homecharge {
+            0% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            34% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+        .parkingcharge {
+
+            animation-name: parkingcharge;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes parkingcharge {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            34% {
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 1;
+            }
+
+            67% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .outcharge {
+            animation-name: outcharge;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes outcharge {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 0;
+            }
+
+            34% {
+                opacity: 0;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            67% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+
+
+        .chargdetail {
+
+            width: 1210px;
+            height: 120px;
+            /* border: 1px solid gray; */
+            text-align: left;
+            color: white;
+            margin-left: 100px;
+        }
+
+        .chargetext,
+        .chargetext1,
+        .chargetext2 {
+
+            width: 365px;
+            height: 100%;
+            /* border-top: white; */
+            border-top: 4px solid white;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            /* margin-left: 4px; */
+        }
+
+
+        .chargetext1 {
+
+            animation: chargetext1;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes chargetext1 {
+            0% {
+                color: white;
+            }
+
+            33% {
+                color: white;
+            }
+
+            34% {
+                color: gray;
+            }
+
+            66% {
+                color: gray;
+            }
+
+            67% {
+                color: white;
+                ;
+            }
+
+            100% {
+                color: white;
+                ;
+            }
+        }
+
+
+        .chargetext2 {
+
+            animation: chargetext2;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes chargetext2 {
+            0% {
+                color: white;
+            }
+
+            33% {
+                color: white;
+            }
+
+            34% {
+                color: white;
+            }
+
+            66% {
+                color: white;
+            }
+
+            67% {
+                color: gray;
+            }
+
+            100% {
+                color: gray;
+            }
+        }
+
+        .not {
+            width: 450px;
+            height: 30px;
+            /* border: 1px solid white; */
+            margin-top: 60px;
+            margin-left: 350px;
+        }
+
+        /* <!-- /////////////////trade area////////// --> */
+
+        .demotrade {
+
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(23, 24, 26);
+            /* border: 1px solid red; */
+            padding: 1px;
+
+        }
+
+        .twodemo {
+
+            width: 85%;
+            height: 90%;
+            /* border: 1px solid blue; */
+            /* background-color: aquamarine; */
+            margin: auto;
+            margin-top: 50px;
+            /* margin-left: 100px; */
+        }
+
+        .demodrive1,
+        .trade {
+            width: 40%;
+            height: 90%;
+            /* border: 1px solid blue; */
+            border-radius: 20px;
+            /* background-color: aquamarine; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+
+        .demodrive1 {
+            /* background-image: url(../data/carpic/demo\ drive.jpeg); */
+            /* background-size: cover; */
+            position: relative;
+        }
+
+        .demodrive1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+        .drive1 {
+
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.992);
+            /* border: 1px solid red; */
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .demodrive1:hover .drive1 {
+            opacity: 0.8;
+        }
+
+        .drive1:hover .drive2 {
+            background-color: rgba(0, 0, 0, 0.395);
+        }
+
+        .drive1:hover .h2 {
+            opacity: 1;
+        }
+
+        .drive1:hover .button {
+            opacity: 1;
+        }
+
+        .ha1 {
+            width: 190px;
+            height: 35px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-left: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .iconinfo {
+            width: 100%;
+            height: 40px;
+            color: white;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+        }
+
+        .demodrive1:hover .iconinfo {
+            opacity: 0;
+        }
+
+        .detail2 {
+
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            /* background-color: red; */
+            margin-left: 150px;
+            margin-top: 10px;
+        }
+
+        .drive2 {
+            width: 400px;
+            height: 200px;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 0;
+            top: 250px;
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .demodrive1:hover .drive2 {
+            opacity: 1;
+        }
+
+        .h2 {
+            color: white;
+            font-size: 20px;
+            /* margin-top: 100px; */
+            margin-left: 20px;
+
+            /* opacity: 0; */
+        }
+
+        .button {
+            width: 190px;
+            height: 35px;
+            margin-top: 120px;
+            margin-left: 20px;
+            /* opacity: 0; */
+        }
+
+
+        /* <!-- /////////////Strecture////////////// --> */
+
+
+        .structure-border {
+            width: 100%;
+            height: 170vh;
+            /* border: 1px solid blue; */
+            /* background-color: aqua; */
+            padding: 1px;
+
+        }
+
+
+        .Strecture {
+            width: 100%;
+            height: 130vh;
+            /* border: 1px solid green; */
+            background-color: black;
+            background-image: url(./gg1gvbreec7fztq1qomv.jpg);
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 1px;
+        }
+
+        .Impact-Protection {
+            width: 120px;
+            height: 200px;
+            border-left: 2px solid white;
+            position: absolute;
+            color: white;
+            left: 370px;
+            margin-top: 190px;
+            font-size: 5px;
+            padding-left: 10px;
+
+        }
+
+        .Rigid-Structure {
+            width: 120px;
+            height: 100px;
+            border-left: 2px solid white;
+            font-size: 5px;
+            position: absolute;
+            color: white;
+            left: 600px;
+            margin-top: 120px;
+            padding-left: 10px;
+
+        }
+
+        .Very-Low-Rollover-Risk {
+            width: 120px;
+            height: 200px;
+            font-size: 5px;
+            border-left: 2px solid white;
+            position: absolute;
+            color: white;
+            left: 650px;
+            margin-top: 500px;
+            padding-left: 10px;
+            padding-top: 190px;
+        }
+
+        .Engineered-for-Safety {
+
+            width: 100%;
+            height: 50vh;
+            /* border: 1px solid red; */
+            background-color: black;
+            margin-top: 765px;
+            /* padding-top: 1px; */
+        }
+
+        .Engineered-for-Safety h1 {
+            color: white;
+            margin-left: 100px;
+            margin-top: 50px;
+
+
+        }
+
+        .Engineered-for-Safety p {
+
+            color: white;
+            margin-left: 100px;
+
+        }
+
+        .safetyover {
+            width: 150px;
+            height: 40px;
+            margin-left: 100px;
+            margin-top: 10px;
+            /* border: 3px solid white; */
+            border-radius: 4px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .safetyover:hover.safetyover {
+            background-color: white;
+            color: black;
+
+        }
+
+        /* <!-- //////////////autopilot////////////// --> */
+        .autopilot {
+            width: 100%;
+            height: 100vh;
+            border: 0px solid red;
+            background-image: url(./Model-3-Autopilot-Tablet-Global.jpg);
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            padding-top: 1px;
+
+        }
+
+        .alldegree {
+            width: 120px;
+            height: 450px;
+            /* border: 1px solid red; */
+            margin-left: 100px;
+            margin-top: 80px;
+            /* padding: 1px; */
+
+
+
+        }
+
+        .dergee {
+            width: 100px;
+            height: 50px;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 10px;
+            /* margin-top: 50px; */
+            /* margin-left: 40px; */
+
+
+
+        }
+
+        .dergee1 {
+            width: 70px;
+            height: 50px;
+            font-size: 10px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-top: 130px;
+            /* margin-left: 40px; */
+        }
+
+        .dergee2 {
+            width: 130px;
+            height: 50px;
+            /* border: 1px solid white; */
+            color: white;
+            font-size: 10px;
+            margin-top: 170px;
+            /* margin-left: 40px; */
+
+        }
+
+        .Arriverefershed {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            /* border: 1px solid red; */
+            color: white;
+            margin-top: 40px;
+
+        }
+
+        .h3,
+        .p {
+            margin-left: 100px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        /* <!-- /////////////////specs area/////////////// --> */
+
+
+        .Model-3-Specs {
+            width: 100%;
+            height: 262vh;
+            background-color: black;
+            /* border: 1px solid red; */
+            padding-top: 1px;
+        }
+
+        .allspecs {
+            width: 90%;
+            height: 1520px;
+            /* border: 5px solid greenyellow; */
+            margin-left: 50px;
+            position: relative;
+        }
+
+
+        .specs1 {
+
+            width: 85%;
+            height: 80px;
+            /* border: 3px solid red; */
+            margin-left: 100px;
+            margin-top: 50px;
+
+        }
+
+        .specs2,
+        .range2,
+        .rear-wheel {
+            /* border: 1px solid blue; */
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .specs2 {
+
+            color: white;
+            /* margin-left: 100px; */
+        }
+
+        .range2,
+        .rear-wheel {
+            width: 200px;
+            height: 100%;
+            font-size: 20px;
+            text-align: center;
+            border-bottom: 2px solid white;
+            color: white;
+            margin-left: 70px;
+            padding-top: 15px;
+
+        }
+
+        .range2 {
+            width: 200px;
+        }
+
+        .rear-wheel {
+            width: 200px;
+        }
+
+        .longdrive {
+            width: 100%;
+            height: 150px;
+            border-bottom: 1px solid gray;
+            color: white
+        }
+
+        .rear-wheel:hover .drivemeter {
+
+            opacity: 0px;
+        }
+
+        .rear-wheel:hover .drivemeter2 {
+
+            opacity: 0px;
+        }
+
+
+
+        .detailspecs {
+            width: 85%;
+            height: 230vh;
+            /* border: 3px solid green; */
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .drivemeter {
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-top: 50px;
+        }
+
+        .battery,
+        .epa,
+        .accelera,
+        .drive3 {
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            font-size: 13px;
+        }
+
+        .accelera,
+        .epa,
+        .drive3 {
+
+            margin-left: 55px;
+        }
+
+        .accelera,
+        .drive3 {
+            margin-left: 55px;
+        }
+
+        .drive3 {
+            margin-left: 55px;
+        }
+
+        /* ==================================portion 1 close=============  */
+        .longdrive2 {
+            width: 100%;
+            height: 550px;
+            border-bottom: 1px solid gray;
+
+
+        }
+
+        .drivemeter2 {
+            width: 49%;
+            height: 40px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-top: 50px;
+        }
+
+
+        .carweight,
+        .cargo,
+        .wheels4 {
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            font-size: 13px;
+        }
+
+        .cargo,
+        .wheels4 {
+
+            margin-left: 80px;
+        }
+
+
+        .wheels4 {
+
+            margin-left: 120px;
+        }
+
+        /* ====================2nd claos =============== */
+        .drivemeter3 {
+            width: 58%;
+            height: 55px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-top: 50px;
+        }
+
+
+        .seating,
+        .screen1,
+        .Ground-Clearance {
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            font-size: 13px;
+        }
+
+        .screen1,
+        .Ground-Clearance {
+
+            margin-left: 80px;
+        }
+
+
+        .Ground-Clearance {
+
+            margin-left: 120px;
+        }
+
+        /* ========================3rd close========================= */
+
+        .Rear8 {
+            width: 130px;
+            height: 20px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-top: 40px;
+            font-size: 13px;
+            text-align: center;
+            margin-left: 200px;
+        }
+
+
+
+
+        /* ++++++++++++++ */
+        .drivemeter4 {
+            width: 66%;
+            height: 40px;
+            /* border: 1px solid white; */
+            color: white;
+
+            margin-top: 45px;
+        }
+
+        .overall-width,
+        .overall-height,
+        .overall-length {
+
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            font-size: 13px;
+
+        }
+
+        .overall-height,
+        .overall-length {
+
+            margin-left: 80px;
+        }
+
+
+        .overall-length {
+
+            margin-left: 120px;
+        }
+
+
+        .extenede1 {
+
+            width: 150px;
+            height: 20px;
+            /* border: 1px solid white; */
+            font-size: 13px;
+            color: white;
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+
+        .drivemeter5 {
+            width: 150px;
+            height: 50px;
+            /* border: 1px solid white; */
+            color: white;
+            margin-top: 30px;
+
+
+
+        }
+
+
+        .cardim {
+            width: 350px;
+            height: 170px;
+            /* border: 1px solid white; */
+            position: absolute;
+            left: 650px;
+            top: 400px;
+            /* margin-left: 430px;
+            margin-top: -200px; */
+
+        }
+
+        .dim1 {
+            width: 340px;
+            height: 160px;
+        }
+
+        .longdrive7 {
+            width: 100%;
+            height: 200px;
+            border-bottom: 1px solid gray;
+            margin-top: 10px;
+        }
+
+        .drivelong4 {
+            width: 90%;
+            height: 25vh;
+            /* border: 1px solid gray; */
+            color: white;
+            /* margin-left: 50px; */
+            margin-top: 20px;
+
+        }
+
+        .drivemeter6 {
+            width: 60%;
+            height: 30%;
+            /* border: red; */
+        }
+
+        .max,
+        .speed1 {
+            width: 150px;
+            height: 110px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            /* margin-left: 50px; */
+            margin-top: 20px;
+        }
+
+        .speed1 {
+
+            margin-left: 50px;
+        }
+
+        .longdrive8 {
+            width: 100%;
+            height: 250px;
+            border-bottom: 1px solid gray;
+            margin-top: 10px;
+        }
+
+        .drivelong5 {
+            width: 90%;
+            height: 30vh;
+            /* border: 1px solid gray; */
+            color: white;
+            /* margin-left: 50px; */
+            margin-top: 20px;
+        }
+
+        .drivemeter7 {
+            width: 60%;
+            height: 30%;
+            /* border: red; */
+        }
+
+        .max,
+        .speed1 {
+            width: 200px;
+            height: 85px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            color: white;
+            /* margin-left: 50px; */
+            margin-top: 20px;
+        }
+
+        .see-detail {
+
+            margin-left: 350px;
+        }
+
+        /* /////////////////////////////////////////////// */
+
+
+
+
+        .modela3 {
+            width: 100%;
+            height: 120vh;
+            /* border: 4px solid red; */
+            background-color: black;
+            padding: 1px;
+        }
+
+        .order {
+            width: 49%;
+            height: 50%;
+            /* border: 1px solid green; */
+            display: inline-block;
+            color: white;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+
+        .heading {
+            width: 80%;
+            height: 60%;
+            /* border: 1px solid red; */
+            margin-top: 70px;
+            margin-left: 50px;
+
+        }
+
+        .custom-order {
+            width: 150px;
+            height: 40px;
+            /* border: 3px solid white; */
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+
+        .estimate {
+            width: 150px;
+            height: 40px;
+            /* border: 3px solid white; */
+            background-color: rgba(128, 128, 128, 0.338);
+            border-radius: 5px;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .carpic {
+            width: 49%;
+            height: 50%;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: 10px; */
+
+        }
+
+        .png {
+
+            width: 100%;
+            height: 100;
+        }
+
+        /* <!-- //////////////////footer//////////////////// --> */
+
+        .stander {
+            width: 100%;
+            height: 50vh;
+            color: white;
+            /* border: 1px solid blue; */
+            background-color: black;
+            text-align: center;
+            padding: 1px;
+        }
+
+        .stander p {
+            margin-top: 150px;
+            font-size: 12px;
+        }
+
+        .lastbar {
+            width: 650px;
+            height: 30px;
+            /* border: 1px solid red; */
+            margin-left: 400px;
+            /* margin-top: 200px; */
+        }
+
+        .lastbar ul li {
+            color: white;
+            list-style: none;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <video class="video" src="./Model Y _ Engineering From First Principles.mp4" autoplay loop muted></video>
+        <div class="header1">
+            <div class="uperline">
+                <div class="firsttext">
+                    <h3 class="exp">Experience Model 3</h3>
+                    <p class="first1">Be among the first tp get behind the wheel of our brand new Model 3. </p>
+                    <p3 class="schedule7"><u>Schedule a Demo Drive</u></p3>
+                </div>
+            </div>
+
+
+            <div class="menubar">
+                <div class="logo">
+                    <img id="textlogo" src="./tesla1-removebg-preview.png" alt="">
+                </div>
+                <div class="tagelist">
+                    <ul class="align">
+                        <li class="taglist-li">Vehicles
+
+
+                            <div class="drop-down">
+                                <div class="carlist">
+                                    <div class="upline">
+                                        <div class="picdetail">
+                                            <div class="modelS">
+                                                <img id="models1" src="./Mega-Menu-Vehicles-Model-S.avif" alt="">
+                                            </div>
+                                            <div class="text2">
+                                                <h5>Model S
+                                                </h5>
+                                                <p> Learn
+                                                    Order</p>
+                                            </div>
+                                        </div>
+                                        <!-- ---------------------- -->
+                                        <div class="picdetail left">
+                                            <div class="model3">
+                                                <img id="modle3pic" src="./Model_3a.jpg" alt="">
+                                            </div>
+                                            <div class="text2">
+                                                <h5>Model 3
+                                                </h5>
+                                                <p> Learn
+                                                    Order</p>
+                                            </div>
+                                        </div>
+                                        <div class="picdetail">
+                                            <div class="modelx">
+                                                <img id="xmodel" src="./model-x.jpg" alt="">
+                                            </div>
+                                            <div class="text2">
+                                                <h5>Model X
+                                                </h5>
+                                                <p> Learn
+                                                    Order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="upline">
+                                        <div class="detail">
+                                            <div class="modely">
+                                                <img id="modelya1" src="./tesla-model-y.jpg" alt="">
+                                            </div>
+                                            <div class="text2">
+                                                <h5>Model Y
+                                                </h5>
+                                                <p> Learn
+                                                    Order</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail truck">
+                                            <div class="cyber">
+                                                <img id="cybertruck" src="./cyber truck.jpeg" alt="">
+                                            </div>
+                                            <div class="text2">
+                                                <h5>Cybertruck
+                                                </h5>
+                                                <p> Learn
+                                                    Order</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail truck">
+                                            <div class="choose">
+                                                <img id="mechoose" src="./help me chose.jpeg" alt="">
+                                            </div>
+                                            <div class="text2">
+                                                <h5>Help Me Choose
+                                                </h5>
+                                                <p> Learn
+                                                    Order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sublist">
+                                    <ul id="unstyle">
+                                        <div class="leftborder">
+                                            <div class="leftborder1">
+                                                <li class="inventory">
+                                                    <link href="https://www.tesla.com">Inventory
+                                                </li>
+                                                <br>
+                                                <li class="usedcar">Used Cars</li>
+                                                <br>
+                                                <li class="demodrive">Demo Drive</li>
+                                                <br>
+                                                <li class="trade-in">Trade-in</li>
+                                                <br>
+                                                <li class="compare">Compare</li>
+                                                <br>
+                                                <li class="charge">Help Me Charge</li>
+                                                <br>
+                                                <li class="fleet">Fleet</li>
+                                                <br>
+                                                <li class="semi">Semi</li>
+                                                <br>
+                                                <li class="roadster">Roadster</li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="taglist-li">Enegry</li>
+                        <li class="taglist-li">Charging</li>
+                        <li class="taglist-li">Discover</li>
+                        <li class="taglist-li">Shop</li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-question"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <div class="Model3">
+                <p2>Reengineered</p2>
+                <h1>Model 3</h1>
+                <p><b>Lease starting at $329/mo*</b></p>
+            </div>
+            <div class="chargetime">
+                <div class="chargeup"></div>
+                <div class="range"></div>
+                <div class="AWD"></div>
+
+            </div>
+            <button class="available">Shop Available</button>
+            <button class="demo">Demo Drive</button>
+            <div class="savetax">
+                <p>*Excludes taxes and fees with price subject to change. Available in select states. See Details</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ///////////////section2////////////////// -->
+
+    <div class="section2">
+
+        <div class="Built for Distance">
+            <div class="bulit">
+                <h1>Built for Distance</h1>
+                <p>Go up to 341 miles (EPA est.) on a single charge with updated exterior styling optimized
+                    <br> for maximum aerodynamics.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- /////////////vedio section////////////// -->
+
+
+        <div class="vedio">
+            <div class="vedioblock">
+                <video class="twocolor" src="./fpmpog1dibf3txwvhdgp.mp4" autoplay loop muted></video>
+                <video class="wheel" src="./wheel video.mp4" autoplay loop muted></video>
+            </div>
+            <div class="updated">
+                <div class="dot">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                </div>
+                <div class="mover">
+                    <div class="slidetext">
+                        <h4>Two New Colors</h4>
+                        <p> Stealth Grey and Ultra Red are designed to change with the light and
+                            <br> viewing angle.
+                        </p>
+                    </div>
+                    <div class="slidetext1">
+                        <h4>Upgraded Wheels</h4>
+                        <p> Enjoy new styling, increased range and less noise with upgraded tires
+                            <br> and wheels.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ///////////////////interior video/////////////////// -->
+
+        <div class="Interior">
+            <div class="intertext">
+                <h2>
+                    All-New Interior</h2>
+                <p>Settle into an all-new interior, featuring a wraparound styling that cocoons you
+                    <br> inside. Customize ambient lighting to make it your own.
+                </p>
+            </div>
+            <div class="intervedio">
+                <video id="intercenter" src="./intervideo.mp4" autoplay loop muted></video>
+            </div>
+        </div>
+
+        <!-- ///////////////five video and text/////////////////////// -->
+
+        <div class="allvideo">
+            <div class="fivevideo">
+                <video class="videos video1" src="./premium material.mp4" autoplay loop muted></video>
+                <video class="videos video2" src="./sublime sound.mp4" autoplay loop muted></video>
+                <video class="videos video3" src="./rear display.mp4" autoplay loop muted></video>
+                <video class="videos video4" src="./ventilated seats.mp4"></video>
+                <video class="videos video5" src="./werless charge.mp4" autoplay loop muted></video>
+            </div>
+            <div class="videotext">
+                <div class="text1 data1">
+                    <div class="textdata">
+                        <h3>Premium Materials</h3>
+                        <p>Immerse yourself in
+                            <br> softer, more sophisticated
+                            <br> materials—executed with
+                            <br> an elevated level of
+                            <br> precision.
+                        </p>
+                    </div>
+                </div>
+                <div class="text2 data2">
+                    <div class="textdata">
+                        <h3>Sublime Sound</h3>
+                        <p>Enjoy more immersive
+                            <br>sound with an audio
+                            <br> system designed by Tesla,
+                            <br> with up to 17 speakers,
+                            <br> dual subwoofers and dual
+                            <br>amplifiers.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="text3 data3">
+                    <div class="textdata">
+                        <h3>Rear Display</h3>
+                        <p>Rear passengers have
+                            <br> access to an 8”
+                            <br> touchscreen with climate
+                            <br> controls and
+                            <br>entertainment.
+                        </p>
+                    </div>
+                </div>
+                <div class="text4 data4">
+                    <div class="textdata">
+                        <h3>Ventilated Seats
+                        </h3>
+                        <p>Ventilate your front seats
+                            <br> from your phone ahead
+                            <br>of time or set them to
+                            <br>adjust automatically with
+                            <br>climate controls.
+                        </p>
+                    </div>
+                </div>
+                <div class="text5 data5">
+                    <div class="textdata">
+                        <h3>Wireless Charging</h3>
+                        <p>Charge two phones at the
+                            <br> same time and enjoy
+                            <br> crystal-clear calls thanks
+                            <br> to upgraded
+                            <br> microphones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //////////////////////////section 5/////////////////////// -->
+
+        <div class="scetion5">
+            <div class="cabin">
+                <h2>A Quieter Cabin</h2>
+                <p>Enjoy a whisper-quiet cabin, thanks to 360-degree acoustic glass. Take in the sky
+                    <br> underneath an all-glass roof that lets in light while protecting you from harmful UV
+                    <br> rays.
+                </p>
+            </div>
+            <div class="cabinpic">
+                <img class="piccabin" src="./open-up.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- /////////////screen area////////////// -->
+
+        <div class="rpnd">
+            <div class="screen">
+                <img class="show" src="./datashow.png" alt="">
+            </div>
+            <div class="textrpnd">
+                <h2 class="elegant">Elegant Technology</h2>
+                <p class="eleganttext">Your favorite game, movie or song is just a few taps away. Use the center
+                    touchscreen to stream
+                    <br> media, customize your vehicle, navigate to your destination and more.
+                </p>
+            </div>
+        </div>
+
+        <!-- /////////////////remote area////////////////// -->
+
+
+        <div class="Remote">
+            <div class="remotetext">
+                <h1>Remote Access
+                </h1>
+                <p>Control everything from one do-it-all Tesla app.
+                </p>
+            </div>
+            <div class="remote3">
+                <div class="remotec">
+                    <img class="remotec1" src="./Model-3-Remote-Gallery-Control-Desktop-LHD.avif" alt="">
+                </div>
+                <div class="remotea">
+                    <img class="remotea1" src="./Model-3-Remote-Gallery-Cabin-Desktop-NA.avif" alt="">
+                </div>
+                <div class="remoteb">
+                    <img class="remoteb1" src="./Model-3-Remote-Gallery-Charging-Desktop-NA 1.avif" alt="">
+                </div>
+                <div class="div3">
+                    <div class="control">
+                        <h1>Controls</h1>
+                        <p>Remotely access and manage your vehicle.</p>
+                    </div>
+                    <div class="cabin2">
+                        <h2>Cabin Preconditioning</h2>
+                        <p>Pre-heat or cool your cabin from anywhere.</p>
+                    </div>
+                    <div class="charging">
+                        <h1>Charging</h1>
+                        <p>Plan your route with charging stops.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /* //////////////////Mode area //////////////// */ -->
+
+
+        <div class="modearea">
+            <div class="allmode">
+                <img class="sentry" src="./Model-3-Mode-Slide-3-Sentry.jpg" alt="">
+                <img class="camp" src="./Model-3-Mode-Slide-2-Camp.jpg" alt="">
+                <img class="dog" src="./Model-3-Mode-Slide-1-dog.jpg" alt="">
+
+                <div class="yourmode">
+                    <h1>Choose Your Mode</h1>
+                </div>
+                <div class="modedot">
+                    <div class="modedot1"></div>
+                    <div class="modedot2"></div>
+                    <div class="modedot3"></div>
+                </div>
+                <div class="modeanimat">
+                    <div class="mode3">
+                        <div class="modedog">
+                            <h1>Dog Mode</h1>
+                            <p>Keep your furry friends comfortable while you’re away from your vehicle.</p>
+                        </div>
+                        <div class="modecamp">
+                            <h1>Camp Mode</h1>
+                            <p>Keep your furry friends comfortable while you’re away from your vehicle.</p>
+                        </div>
+                        <div class="modesentry">
+                            <h1>Sentry Mode</h1>
+                            <p>Keep your furry friends comfortable while you’re away from your vehicle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- /////////////charging area/////////////// -->
+
+
+        <div class="chargingarea">
+            <div class="Convenient">
+                <h1>Convenient Charging</h1>
+                <p>Fast, accessible, easy—anywhere with electricity</p>
+            </div>
+            <div class="charg">
+                <div class="chargslid">
+                    <img class="homecharge" src="./charge home.avif" alt="">
+                    <img class="parkingcharge" src="./charge parking.avif" alt="">
+                    <img class="outcharge" src="./charging out.avif" alt="">
+                </div>
+            </div>
+            <div class="chargdetail">
+                <div class="chargetext1">
+                    <h1>At Home
+                    </h1>
+                    <p>Our most convenient and affordable way
+                        <br> to charge.
+                    </p>
+                </div>
+                <div class="chargetext2">
+                    <h1>On the Road
+                    </h1>
+                    <p>Add up to 175 miles in just 15 minutes† at one
+                        <br> of 50,000+ global Superchargers.
+                    </p>
+                </div>
+                <div class="chargetext">
+                    <h1>Where You Park
+                    </h1>
+                    <p>Plug in at your destination, whether it’s a
+                    </p>
+                    <br> hotel, park or somewhere else.
+                </div>
+                <div class="not">
+                    <p>†Range added in 15 minutes is based on constant speed data.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- /////////////////trade area////////// -->
+
+        <div class="demotrade">
+            <div class="twodemo">
+
+                <div class="demodrive1">
+                    <img src="./Model-3-Pre-Order-Demo-Drive-Desktop.jpg" alt="">
+                    <div class="drive1"></div>
+                    <div class="iconinfo">
+                        <h1 class="ha1">Demo Drive</h1>
+                        <i class="fa-solid fa-info detail2"></i>
+                    </div>
+                    <div class="drive2">
+                        <h2 class="h2">Get behind the wheel and experience<br>Tesla</h2>
+                        <button class="button">Schduel a drive</button>
+                    </div>
+                </div>
+
+                <div class="demodrive1">
+                    <img src="./S3XY-Pre-Order-Trade-In-Desktop.jpg" alt="">
+                    <div class="drive1">
+                    </div>
+
+                    <div class="iconinfo">
+                        <h1 class="ha1">Demo Drive</h1>
+                        <i class="fa-solid fa-info detail2"></i>
+                    </div>
+                    <div class="drive2">
+                        <h2 class="h2">Get an instant trade-in estimate</h2>
+                        <button class="button"> Get a estimate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /////////////Strecture////////////// -->
+
+        <div class="structure-border">
+            <div class="Strecture">
+                <div class="Impact-Protection" data-aos="fade-up" data-aos-duration="1500">
+                    <h1>Impact Protection</h1>
+                </div>
+                <div class="Rigid-Structure" data-aos="fade-up" data-aos-duration="1500">
+                    <h1>Rigid Structure</h1>
+                </div>
+                <div class="Very-Low-Rollover-Risk" data-aos="fade-down" data-aos-duration="1500">
+                    <h1>Very Low Rollover Risk</h1>
+                </div>
+
+
+                <div class="Engineered-for-Safety">
+                    <h1>Engineered for Safety</h1>
+                    <p>
+                        Model 3 benefits from the same features that make our other vehicles so safe: energy-absorbing
+                        side
+                        sills, a
+                        <br>fortified battery pack mounted low in the vehicle to reduce rollover risk and a metal body
+                        structure that
+                        <br> can withstand many times the car’s weight. Active safety features like automatic emergency
+                        braking come
+                        <br>standard.
+                    </p>
+                    <button class="safetyover">safety Overview</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- //////////////autopilot////////////// -->
+
+        <div class="autopilot">
+            <div class="alldegree">
+                <div class="dergee">
+                    <h1>360°</h1>
+                    <p>Degrees of Visibility</p>
+                </div>
+                <div class="dergee1">
+                    <h1>360°</h1>
+                    <p>Tesla Vision</p>
+                </div>
+                <div class="dergee2">
+                    <h1>250m</h1>
+                    <p>Powerful Visual Processing
+                    </p>
+                </div>
+            </div>
+            <div class="Arriverefershed">
+                <h3 class="h3">Arrive Refershed</h3>
+                <p class="p">Autopilot enables your car to steer, accelerate and brake automatically within its lane
+                    under
+                    your
+                    <br>active supervision, assisting with the most burdensome parts of driving. With over-the-air
+                    software
+                    <br>updates, the latest enhancements are available instantly. 
+                </p>
+            </div>
+        </div>
+
+
+        <!-- /////////////////specs area/////////////// -->
+
+        <div class="Model-3-Specs">
+            <div class="allspecs">
+                <div class="specs1">
+                    <div class="specs2">
+                        <h1>Model 3 Specs</h1>
+                    </div>
+                    <div class="range2">
+                        <p> long Range AWD</p>
+                    </div>
+                    <div class="rear-wheel">
+                        <p> Rear Wheel Drive </p>
+                    </div>
+                </div>
+                <div class="detailspecs">
+                    <div class="longdrive">
+                        <div class="drivelong">
+                            <h3>Drive</h3>
+                        </div>
+                        <div class="drivemeter">
+                            <p class="battery"> Battery
+                                <br><b> Long Range</b>
+                            </p>
+                            <p class="epa"> Range (EPA set.)
+                                <br><b> 341ml</b>
+                            </p>
+                            <p class="accelera"> Acceleration
+                                <br><b> 4.2 s 0-60 mph</b>
+                            </p>
+                            <p class="drive3"> Drive
+                                <br><b> Dual Motor All-Wheel</br>Drive</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="longdrive2">
+                        <div class="drivelong">
+                            <h3>DImensions</h3>
+                        </div>
+                        <div class="drivemeter2">
+                            <p class="carweight"> Weight
+                                <br><b> 4030 lbs</b>
+                            </p>
+                            <p class="cargo"> Cargo
+                                <br><b> 24 cu ft</b>
+                            </p>
+                            <p class="wheels4"> Wheels
+                                <br><b> 18" or 19"</b>
+                            </p>
+                        </div>
+                        <div class="drivemeter3">
+                            <p class="seating">Seating
+                                <br><b> 4 Adults</b>
+                            </p>
+                            <p class="screen1">Displays
+                                <br><b>15.4" Center
+                                    <br>Touchscreen</b>
+                            </p>
+                            <p class="Ground-Clearance"> Ground Clearance
+                                <br> <b>5.4"</b>
+                            </p>
+                        </div>
+
+                        <div class="Rear8 ">
+                            <p><b>8"Rear Touchscreen</b></p>
+                        </div>
+
+                        <div class="drivemeter4">
+                            <p class="overall-width"> Overall Width
+                                <br><b> Floded Mirrors:76.1"</b>
+                            </p>
+                            <p class="overall-height"> Overall height
+                                <br><b>56.7"</b>
+                            </p>
+                            <p class="overall-length">Overall lenght
+                                <br> <b>185.8"</b>
+                            </p>
+
+                            <div class="extenede1">
+                                <p><b> Extended mirrors:82.2"</b></p>
+
+                            </div>
+                            <div class="drivemeter5">
+                                <p class="Track1"> Track - Fornt & Rear
+                                    <br><b> 62.4" & 62.4"</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardim">
+                        <img class="dim1" src="./demension.jpg" alt="">
+                    </div>
+                    <div class="longdrive7">
+                        <div class="drivelong4">
+                            <h3>Charging</h3>
+                            <div class="drivemeter6">
+                                <p class="max">Supercharging
+                                    <br>Max/Paymnet type
+                                    <br><b> 250 kW Max: Pay Per
+                                        <br>Use</b>
+                                </p>
+                                <p class="speed1"> Charging Speed
+                                    <br><b>Up to 175 miles added in
+                                        <br> 15 mintes</b>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="longdrive8">
+                        <div class="drivelong5">
+                            <h3>Warranty
+                            </h3>
+                            <div class="drivemeter7">
+                                <p class="max">Basic Vehicle
+                                    <b><br> 4 years or 50,000 mi,
+                                        <br> whichever comes first</b>
+                                </p>
+                                <p class="speed1"> Battery & Drive Unit
+                                    <b><br>8 years or 120,000 mi,
+                                        <br> whichever comes first</b>
+                                </p>
+                                <p class="see-detail"><b><u>See detail</u></b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drivelong5">
+                        <h3>Other
+                        </h3>
+                        <div class="drivemeter7">
+                            <p class="max"><b><u>Owner Manual</u></b>
+                            </p>
+                            <p class="speed1"><b><u>Compare Models</u></b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modela3">
+                <div class="order">
+                    <div class="heading">
+                        <h1>Model 3</h1>
+                        <p>Design yours or get a trade-in estimate for your current
+                            <br> vehicle.
+                        </p>
+                        <button class="custom-order">Custom Order</button>
+                        <button class="estimate">Get an Estimate</button>
+                    </div>
+                </div>
+                <div class="carpic">
+                    <img class="png" src="./model 3.png" alt="">
+                </div>
+                <div class="stander">
+                    <p>Certain high data usage vehicle features require at least Standard Connectivity, including maps,
+                        <br> navigation and voice commands. Access to features that use cellular data and third-party
+                        licenses
+                        <br> are subject to change. <u>Learn more about Standard Connectivity and any limitations.</u>
+                    </p>
+                </div>
+                <div class="lastbar">
+                    <ul>
+                        <li>Tesla@2004</li>
+                        <li>Privacy & Legal</li>
+                        <li>Vehicle Recalls</li>
+                        <li>Contact</li>
+                        <li>News</li>
+                        <li>Get Updates</li>
+                        <li>Locations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////footer//////////////////// -->
+
+
+    <!-- /////////////////////////work up///////////// -->
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
